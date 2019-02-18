@@ -1,0 +1,30 @@
+{
+  "main": "index.html",
+  "name": "just-paint",
+  "description": "just-paint",
+  "version": "0.1.0",
+  "keywords": [
+    "canvas",
+    "node-webkit"
+  ],
+  "window": {
+    "title": "just-paint",
+    "icon": "link.png",
+    "toolbar": false,
+    "frame": false,
+    "width": 800,
+    "height": 500,
+    "position": "center",
+    "min_width": 720,
+    "min_height": 400,
+    "transparent": true
+      
+  },
+  "webkit": {
+    "plugin": true
+  },
+  "dependencies": {
+    "deck": "latest",
+    "node-webkit-fdialogs": "^0.2.7"
+  }
+}

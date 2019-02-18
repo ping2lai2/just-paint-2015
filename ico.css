@@ -1,0 +1,85 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?-ce7ig2');
+	src:url('fonts/icomoon.eot?#iefix-ce7ig2') format('embedded-opentype'),
+		url('fonts/icomoon.woff?-ce7ig2') format('woff'),
+		url('fonts/icomoon.ttf?-ce7ig2') format('truetype'),
+		url('fonts/icomoon.svg?-ce7ig2#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-maximize:before {
+	content: "\e112";
+}
+
+.icon-minimize:before {
+	content: "\e113";
+}
+
+.icon-minus:before {
+	content: "\e115";
+}
+
+.icon-cross:before {
+	content: "\e117";
+}
+
+.icon-eraser:before {
+	content: "\e603";
+}
+
+.icon-flow-line:before {
+	content: "\e602";
+}
+
+.icon-save:before {
+	content: "\e600";
+}
+
+.icon-brush:before {
+	content: "\e605";
+}
+
+.icon-circle:before {
+	content: "\e604";
+}
+
+.icon-bucket:before {
+	content: "\e601";
+}
+
+.icon-pencil:before {
+	content: "\e905";
+}
+
+.icon-eyedropper:before {
+	content: "\e90a";
+}
+
+.icon-undo2:before {
+	content: "\e967";
+}
+
+.icon-redo2:before {
+	content: "\e968";
+}
+
+.icon-checkbox-unchecked:before {
+	content: "\ea53";
+}
+

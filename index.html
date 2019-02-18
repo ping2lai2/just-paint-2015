@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>just-paint</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="ico.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <div class="top-nav"> 
+                    <div class="undoredo">
+                        <button id="undo"><span class="icon-undo2"></span></button>
+                        <button id="redo"><span class="icon-redo2"></span></button>
+                    </div>
+                    <div class="frame-buttons">
+                        <button id="close"><span class="icon-cross"></span></button>
+                        <button id="turn-up"><span class="icon-minus"></span></button>
+                    </div>
+                    <div class="drag-prog"></div>
+                    
+                </div>
+                <div class="panel">
+                        <button id="menu">меню</button>
+                        <ul class="inr-menu" style="display:none;">
+                            <span>Сохранить изображение:</span>
+                            <ul>
+                                <li><button id="save">Сохранить</button></li>
+                            </ul>
+                            <span>Новый холст:</span>
+                            <ul>
+                                <li>Высота:<input type="text" id="hCanv" maxlength="4">px</li>
+                                <li>Ширина:<input type="text" id="wCanv" maxlength="4">px</li>
+                                <li><button id="add">Создать</button></li>
+                            </ul>
+                        </ul>
+                        <div class="controls clearfix" id="controls">
+                            <button id="pipette"><span class="icon-eyedropper"></span></button>
+                            <button id="floodfill"><span class="icon-bucket"></span></button>
+                            <button id="pencil"><span class="icon-pencil"></span></button>
+                            <button id="eraser"><span class="icon-eraser"></span></button>
+                            
+                            <button id="brush"><span class="icon-brush"></span></button>
+                            <button id="circle"><span class="icon-circle"></span></button>
+                            <button id="rectangle"><span class="icon-checkbox-unchecked"></span></button>
+                            <button id="line"><span class="icon-flow-line"></span></button>
+                           
+                        </div>
+                        <input id ="palette1" type="color" class="hidePal">
+                        <input id ="palette2" type="color" class="hidePal">
+                        <a id="download"  style="display:none;"></a>
+                 
+                </div>
+            </header>
+            <div class="inner" id="inner">
+                <div id="canopy"></div>
+             
+                    
+                <div id="inr-wrap">
+                    
+                    <div id="settings" style="left:10px; top:10px;">
+                        <div class="drag-zone" onmousedown='mydragg.startMoving("settings","inr-wrap",event);' onmouseup='mydragg.stopMoving("settings","inr-wrap");' onmouseleave='mydragg.stopMoving("settings","inr-wrap");'><span>настройки</span></div>
+                        <div class="elems">
+                            <div id="elems">
+                            </div>
+                        </div>
+                    </div>
+                      <canvas height='720' width='480' id='list1'></canvas>
+                      <canvas height='720' width='480' id='list2'></canvas>
+                </div>
+            </div>    
+        </div>
+        <script src="jquery-2.1.1.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
